@@ -1,0 +1,18 @@
+```text
+python-chess
+pandas
+```
+
+Optional:
+
+```text
+tabulate
+```
+
+`tabulate` may be useful if markdown table output depends on `pandas.DataFrame.to_markdown()`.
+
+Also required:
+
+Stockfish 18 
+a Python interpreter
+lots of time
