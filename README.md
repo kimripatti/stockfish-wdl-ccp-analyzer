@@ -1034,3 +1034,59 @@ Use:
 ```
 
 for quick summaries.
+
+
+# Attribution
+
+If you use this analyzer or its metrics in published chess research, articles, videos, or comparisons, attribution is appreciated.
+
+Suggested citation:
+
+```text
+Stockfish WDL CCP Analyzer — WDL expected-score chess analysis with CCP search-difficulty diagnostics, root-branch diagnostics, and DPQ pressure/yield metrics.
+```
+
+---
+
+# Notes and limitations
+
+This project is experimental.
+
+The metrics are designed for chess interpretation and comparative analysis, not as official replacements for engine evaluation, centipawn loss, or established rating systems.
+
+Important limitations:
+
+* Results depend on Stockfish version.
+* Results depend on search settings.
+* WDL expected score is engine-estimated, not objective truth.
+* Difficulty metrics are interpretive and should be compared only when analysis settings are consistent.
+* Time-limited searches are less reproducible than node-limited searches.
+* Very tactical positions, tablebase positions, repetitions, and adjudicated/forfeited games may need special care.
+* If a PGN contains unusual results, missing headers, or non-standard moves, check the output carefully.
+
+---
+
+# Development status
+
+Current main scripts:
+
+```text
+wdl_chess_analyzer_v3_6_1_ccp_v2_root_branch_diagnostics_fix.py
+make_wdl_report_v4_7_dpq_pressure_yield.py
+combine_match_reports_v4_7_dpq_pressure_yield.py
+```
+
+Main feature areas:
+
+```text
+Stockfish WDL expected-score analysis
+WDL move accuracy
+expected-score loss
+volatility
+Performance Quality
+CCP search difficulty
+root-branch diagnostics
+DPQ pressure/yield metrics
+match report generation
+run report generation
+```
